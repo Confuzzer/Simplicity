@@ -1,0 +1,44 @@
+<html>
+ <head>
+    <style>
+        #button {
+            border-style: solid;
+            padding: 20px;
+        }
+
+        div.center {
+            text-align: center;
+        }
+        #numbergoup {
+            background-color: Indigo;
+            padding: 20px;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+    <h1 id="title">
+        Click the button, Get more number!
+    </h1>
+    <p id="number">0</p>
+    <button
+        class="button"
+        style="text-decoration: none; color: black; font-family: calibri;"
+        id="numbergoup"
+        onclick="myFunction()"
+        >Number go up</button>
+    </div>
+</body>
+
+<script>
+    function myFunction() {
+        var numberValue = document.getElementById('number').innerHTML;
+        numberValue++;
+
+        document.getElementById('number').innerHTML = numberValue;
+    }
+    </script> </html>
